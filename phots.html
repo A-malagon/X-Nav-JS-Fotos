@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+     <title>Photos</title>
+     <script type="text/javascript" charset="utf-8">
+       function photo() {
+          var photos = [
+            'http://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Caracal_Caracal-001.jpg/320px-Caracal_Caracal-001.jpg',
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT0o8o-UTiJFpeuNqBOK88eTJWD8-PHf0TZ6_6wRYZWxqhJNmb',
+            'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTSjg-aBrCXBY9RFzqLUluBwsiGl04vrVrOpV4OXI07jJcjxspLAw',
+            'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTlukjrusXk6LVhNf2q9wxK2THjJhQfaalNpcbVRPvY4JmAbmlZ',
+            'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQT4atzs0XBixIiKZc8NHnkb3rKd2S7-M1aCKmTNeC6HIOH3PJb',
+            'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRggIQRdGuxiB8--OIRXfIvWawvXskEqBF19N--tdht1wtTw3pS'
+          ]
+          elemento = document.getElementById('tag');
+          URL = photos[Math.floor(Math.random()*photos.length)]
+          elemento.innerHTML = '<img src="' + URL + '">';
+       }
+     </script>
+   </head>
+   <body>
+     <p>¿Quieres ver fotos? <a href="javascript:photo()">Pulsa aquí!</a></p>
+     <span id="identificador"></span>
+   </body>
+</html>
